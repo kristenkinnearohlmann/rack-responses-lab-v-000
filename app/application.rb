@@ -1,7 +1,12 @@
 class Application
 
-  def call
+  def call(env)
 
+    resp = Rack::Response.new
+
+    resp.write
+
+    resp.finish
   end
 
 end
